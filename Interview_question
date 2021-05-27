@@ -1,0 +1,52 @@
+// Writen C++ code here			
+// 1.	Write code in any programming language to print the following pyramid
+#include <iostream>
+
+int main() {
+    // Writen C++ code here
+    int a,i,len,c;
+    a=65;
+    std::cout<<"Pyramid length ";
+    std::cin>>len;
+    for(int i=0;i<len;i++){
+        for(int j=len-i-1;j>0;j--){
+            std::cout<<" ";
+        }
+        for(int k=0;k<2*i+1;k++){
+            if(k<((2*i+1)/2)){
+                std::cout<<char(a++);}
+            else{
+                std::cout<<char(a--);}
+        }
+        std::cout<<"\n";
+        a=65;
+    }
+    return 0;
+}
+//2.	Write code to remove repeating characters in a given string.
+
+#include <iostream>
+using namespace std;
+
+char *duplicate(char str[], int n)
+{
+int pos = 0,j,i;
+for (i=0; i<n; i++) {
+	for (j=0; j<i; j++)
+		if (str[i] == str[j])
+		    break;
+	if (j == i)
+		str[pos++] = str[i];
+}
+return str;
+}
+
+int main()
+{
+char str[100];
+cout<<"Enter the string";
+cin>>str;
+int n = sizeof(str) / sizeof(str[0]);
+cout << duplicate(str, n);
+return 0;
+}
