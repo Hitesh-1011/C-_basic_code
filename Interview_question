@@ -1,5 +1,5 @@
 // Writen C++ code here			
-// 1.	Write code in any programming language to print the following pyramid
+// 1. Write code in any programming language to print the following pyramid
 #include <iostream>
 
 int main() {
@@ -23,7 +23,10 @@ int main() {
     }
     return 0;
 }
-//2.	Write code to remove repeating characters in a given string.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+//2. Write code to remove repeating characters in a given string.
 
 #include <iostream>
 using namespace std;
@@ -50,6 +53,8 @@ int n = sizeof(str) / sizeof(str[0]);
 cout << duplicate(str, n);
 return 0;
 }
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 //3.
 
