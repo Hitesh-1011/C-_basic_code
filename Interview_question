@@ -50,3 +50,26 @@ int n = sizeof(str) / sizeof(str[0]);
 cout << duplicate(str, n);
 return 0;
 }
+
+//3.
+
+using namespace std;
+#include<iostream>
+
+void findingpair(int arr[], int n,int sum){
+	for(int i=0;i<n-1;i++){
+		for(int j=i+1;j<n;j++){
+			if(arr[i]+arr[j]==sum){
+				cout<<arr[i]<<","<<arr[j]<<"\n";
+			}
+		}
+	}
+}
+
+int main(){
+	int arr[]={2,3,5,1,8,9,2};
+	int sum=10;
+	int n=sizeof(arr)/sizeof(arr[0]);
+	findingpair(arr,n,sum);
+	return 0;
+}
